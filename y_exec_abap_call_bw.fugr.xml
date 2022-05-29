@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>execut abap program via bw call</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LY_EXEC_ABAP_CALL_BWTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLY_EXEC_ABAP_CALL_BW</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Y_EXEC_ABAP_CALL_BW</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>call abap program synchronously</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>I_PROGRAM</PARAMETER>
+       <TYP>PROGRAMM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_VARIANT</PARAMETER>
+       <TYP>RALDB_VARI</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_PROGRAM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>ABAP Program Name</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_VARIANT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Variant Name</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
